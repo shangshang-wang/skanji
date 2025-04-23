@@ -1,1 +1,1 @@
-# skanji
+# Skanji: Stable Diffusion Kanji
