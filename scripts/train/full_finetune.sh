@@ -6,8 +6,6 @@ eval "$(mamba shell hook --shell bash)" && mamba activate "${MAMBA_ENV}"
 echo "START TIME: $(date)"
 echo "PYTHON ENV: $(which python)"
 
-source "./scripts/set/set_vars.sh"
-
 GPU_COUNT=$(nvidia-smi --query-gpu=name --format=csv,noheader | wc -l)
 
 PY_SCRIPT="./scripts/train/train_text_to_image.py"
